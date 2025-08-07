@@ -3,16 +3,14 @@ name = "tug-o-war-server"
 version = "0.1.0"
 description = ""
 authors = [
-    {name = "Sean Kelley",email = "seansfkelley@users.noreply.github.com"}
+    { name = "Sean Kelley", email = "seansfkelley@users.noreply.github.com" },
 ]
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = [
-]
+dependencies = ["fastapi[standard] (>=0.116.1,<0.117.0)"]
 
 [tool.poetry]
-packages = [{include = "tug_o_war_server", from = "src"}]
-
+packages = [{ include = "src" }]
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
